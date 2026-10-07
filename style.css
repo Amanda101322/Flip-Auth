@@ -8,3 +8,51 @@ body {
     color: #26364a;
     background: #dff3ff;
 }
+.auth-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.auth-card {
+    width: 380px;
+    height: 500px;
+    perspective: 1000px;
+}
+.card-inner {
+    width: 100%;
+    height: 100%;
+}
+.signup-part,
+.login-part {
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
+    background: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(70, 130, 180, 0.15);
+}
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.7s ease;
+}
+.signup-part,
+.login-part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    padding: 2.5rem;
+    border-radius: 24px;
+    backface-visibility: hidden;
+    box-shadow: 0 15px 35px rgba(70, 130, 180, 0.15);
+}
+.login-part {
+    transform: rotateY(180deg);
+}

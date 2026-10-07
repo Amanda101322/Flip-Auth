@@ -10,24 +10,45 @@
     <main>
         <section class="auth-section">
             <div class="auth-card">
+                <div class="card-inner">
                 <div class="signup-part"></div>
                 <h1>Welcome</h1>
                 <h2>Create an account</h2>
                 <p>Let's get you started</p>
+                
                 <form>
                     <label for="name">Type in your name here</label>
                     <input type="text" id="name" name="name" required>
-                    <label for="email">Email</label>
+                    <label for="signup-email">Email</label>
                     <input type="email" id="email" name="email" required>
-                    <label for="password">Add a password you'll remember</label>
-                    <input type="password" id="password" name="password" required>
+                    <label for="signup-password">Add a password you'll remember</label>
+                    <input type="password" id="signup-password" name="password" required>
                     <button type="submit" class="submit-button">Create account</button>
                 </form>
                 <p>Already have an account?
                         <button type="button" class="switch-card-button">Log in instead</button>
                     </p>
                 </div>
+
+                <div class="login-part">
+                    <h1>Welcome Back</h1>
+                    <h2>Log in to your account</h2>
+                    <p>Good to see you again</p>
+                <form>
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" name="email"required>
+                    <label for="login-password">Password</label>
+                <input type="password" id="login-password" name="password"  required>
+                <button type="submit" class="submit-button">
+                    Log in
+                </button>        
+            </form>
+            <p>Don't have an account?
+                <button type="button" class="switch-card-button">Sign up instead</button>
+            </p>
             </div>
+            </div>
+        </div>
         </section>
     </main>
     <script src="script.js"></script>

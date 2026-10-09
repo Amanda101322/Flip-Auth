@@ -6,9 +6,12 @@ body {
     min-height: 100vh;
     font-family: Arial, sans-serif;
     color: #684456;
-    background: linear-gradient(
-        135deg, #fff1f6, #fbd5ef, #fff7fa
-    );
+    background-attachment: fixed;
+    background-color: #fce4ec;
+    background-image: url("images/pink-coquette-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .auth-section {
     min-height: 100vh;
@@ -16,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 2rem;
+    box-sizing: border-box;
 }
 .auth-card {
     width: 380px;

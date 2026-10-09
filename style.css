@@ -5,8 +5,10 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: Arial, sans-serif;
-    color: #26364a;
-    background: #dff3ff;
+    color: #684456;
+    background: linear-gradient(
+        135deg, #fff1f6, #fbd5ef, #fff7fa
+    );
 }
 .auth-section {
     min-height: 100vh;
@@ -32,10 +34,11 @@ body {
     width: 100%;
     height: 100%;
     padding: 2.5rem;
-    background: #ffffff;
-    border-radius: 24px;
+    background: #fffafb;
+    border-radius: 0;
     box-shadow: 0 15px 35px rgba(70, 130, 180, 0.15);
     position: absolute;
+    border: 1px solid #f8dce8;
     top: 0;
     left: 0;
     backface-visibility: hidden;
@@ -50,10 +53,11 @@ body {
 .login-part h1 {
     margin: 0 0 0.5rem;
     font-size: 2rem;
-    color: #315b7d;
+    color: #bd6689;
 }
 .signup-part h2, 
 .login-part h2 {
+    margin: 0 0 0.5rem;
     margin: 0 0 0.5rem;
     font-size: 1.25rem;
     font-weight: 500;
@@ -61,7 +65,7 @@ body {
 .signup-part > p,
 .login-part > p {
     margin-top: 0;
-    color: #6f8497; 
+    color: #a78393; 
 }
 .signup-part form,
 .login-part form {
@@ -74,38 +78,39 @@ body {
 .login-part label {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #4d6e78;
+    color: #80586b;
 }
 .signup-part input,
 .login-part input {
     width: 100%;
     padding: 0.8rem 1rem;
-    border: 1px solid #c8dce9;
+    border: 1px solid #f0d2df;
     border-radius: 12px;
     font: inherit;
-    color: #26364a;
+    color: #684456;
     outline: none;
-    background: #f7fcff;
+    background: #fff5f9;
 }
 .signup-part input:focus,
 .login-part input:focus {
-    border-color: #83b9d8;
-    box-shadow: 0 0 0 3px rgba(131, 185, 216, 0.15);
+    border-color: #df8fb0;
+    box-shadow: 0 0 0 3px rgba(223, 143, 176, 0.18);
 }
 .submit-button {
     margin-top: 0.8rem;
     padding: 0.85rem 1rem;
     border: none;
     border-radius: 12px;
-    background: #7db7d8;
-    color: white;
+    background: #df8fb0;
+    color: #ffffff;
     transition: background 0.2s ease, transform 0.2s ease;
     cursor: pointer;
     font-weight: 600;
     font: inherit;
+    box-shadow: 0 5px 12px rgba(201, 112, 150, 0.15);
 }
 .submit-button:hover {
-    background: #679fbe;
+    background: #cc7599;
     transform: translateY(-2px);
 }
 .submit-button:active {
@@ -116,8 +121,14 @@ body {
     background: none;
     padding: 0;
     margin-left: 0.25rem;
-    color: #4d96c2;
+    color: #c16c91;
     cursor: pointer;
     font-weight: 600;
     font: inherit;
+}
+.auth-card {
+    width: 380px;
+    height: 540px;
+    perspective: 1000px;
+    filter: drop-shadow(0 10px 25px rgba(224, 143, 176, 0.12))
 }

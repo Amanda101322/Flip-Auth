@@ -199,3 +199,23 @@ body {
 .login-part > p:last-child {
     text-align: center;
 }
+.password-field {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.password-field input {
+    flex: 1;
+    min-width: 0;
+}
+.toggle-password {
+    padding: 0.5rem;
+    border: 1px solid #efc6d8;
+    background: #fff4f8;
+    color: #c45e86;
+    font-family: "Alegreya", serif;
+    cursor: pointer;
+}
+.toggle-password:hover {
+    background: #fce4ec;
+}

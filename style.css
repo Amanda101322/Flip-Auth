@@ -80,35 +80,37 @@ body {
 .login-part form {
     display: flex;
     flex-direction: column;
-    gap: 0.7rem;
-    margin-top: 2rem;
+    gap: 0.65rem;
+    margin-top: 1.8rem;
 }
 .signup-part label,
 .login-part label {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #80586b;
+    color: #805568;
 }
 .signup-part input,
 .login-part input {
     width: 100%;
-    padding: 0.8rem 1rem;
-    border: 1px solid #f0d2df;
-    border-radius: 12px;
+    padding: 0.85rem 0.9rem;
+    box-sizing: border-box;
+    border: 1px solid #efc6d8;
+    border-radius: 0;
     font: inherit;
     color: #684456;
     outline: none;
-    background: #fff5f9;
+    background: #fff4f8;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .signup-part input:focus,
 .login-part input:focus {
     border-color: #df8fb0;
-    box-shadow: 0 0 0 3px rgba(223, 143, 176, 0.18);
+    box-shadow: 0 0 0 3px rgba(216, 117, 156, 0.15);
 }
 .submit-button {
     margin-top: 0.8rem;
-    padding: 0.85rem 1rem;
-    border: none;
+    padding: 0.95rem 1rem;
+    border: 1px solid #d8759c;
     border-radius: 12px;
     background: #df8fb0;
     color: #ffffff;
@@ -117,9 +119,10 @@ body {
     font-weight: 600;
     font: inherit;
     box-shadow: 0 5px 12px rgba(201, 112, 150, 0.15);
+    transition: background 0.2s ease, transform 0.2s ease;
 }
 .submit-button:hover {
-    background: #cc7599;
+    background: #c45e86;
     transform: translateY(-2px);
 }
 .submit-button:active {
@@ -130,10 +133,13 @@ body {
     background: none;
     padding: 0;
     margin-left: 0.25rem;
-    color: #c16c91;
+    color: #c45e86;
     cursor: pointer;
     font-weight: 600;
     font: inherit;
+}
+.switch-card-button:hover {
+    text-decoration: underline;
 }
 .auth-card {
     width: 380px;

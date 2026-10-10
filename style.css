@@ -210,12 +210,19 @@ body {
 }
 .toggle-password {
     padding: 0.5rem;
-    border: 1px solid #efc6d8;
-    background: #fff4f8;
+    border: none;
+    background: transparent;
     color: #c45e86;
-    font-family: "Alegreya", serif;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .toggle-password:hover {
     background: #fce4ec;
+}
+.toggle-password img {
+    display: block;
+    width: 20px;
+    height: 20px;
 }

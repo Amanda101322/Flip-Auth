@@ -4,7 +4,7 @@
 body {
     margin: 0;
     min-height: 100vh;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Alegreya", serif;
     color: #684456;
     background-attachment: fixed;
     background-color: #fce4ec;
@@ -23,10 +23,11 @@ body {
 }
 .auth-card {
     width: 430px;
-    height: 620px;
+    height: 540px;
     max-width: 100%;
-    filter: drop-shadow(0 12px 22px rgba(164, 81, 112, 0.18));
+    filter: drop-shadow(0 12px 22px rgba(224, 143, 176, 0.12));
     perspective: 1000px;
+    position: relative;
 }
 .card-inner {
     width: 100%;
@@ -59,34 +60,41 @@ body {
 .signup-part h1,
 .login-part h1 {
     margin: 0 0 0.5rem;
-    font-size: 2rem;
+    font-size: 2.8rem;
     color: #c45e86;
-    font-family: "Playfair Display", Georgia, serif;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    line-height: 1.05;
 }
 .signup-part h2, 
 .login-part h2 {
     margin: 0 0 0.5rem;
-    margin: 0 0 0.5rem;
-    font-size: 1.25rem;
+    font-family: "Alegreya", serif;
+    font-size: 1.5rem;
     font-weight: 500;
+    line-height: 1.2;
+    color: #684456;
 }
 .signup-part > p,
 .login-part > p {
     margin-top: 0;
+    font-family: "Alegreya", serif;
+    font-size: 1.15rem;
     color: #a7798d;
-    line-height: 1.5 
+    line-height: 1.4; 
 }
 .signup-part form,
 .login-part form {
     display: flex;
     flex-direction: column;
-    gap: 0.65rem;
-    margin-top: 1.8rem;
+    gap: 0.5rem;
+    margin-top: 1.2rem;
 }
 .signup-part label,
 .login-part label {
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Alegreya", serif;
     color: #805568;
 }
 .signup-part input,
@@ -100,7 +108,9 @@ body {
     color: #684456;
     outline: none;
     background: #fff4f8;
+    font-family: "Alegreya", serif;
     transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1rem;
 }
 .signup-part input:focus,
 .login-part input:focus {
@@ -113,13 +123,14 @@ body {
     border: 1px solid #d8759c;
     border-radius: 12px;
     background: #df8fb0;
+    font-size: 1.1rem;
     color: #ffffff;
     transition: background 0.2s ease, transform 0.2s ease;
     cursor: pointer;
-    font-weight: 600;
-    font: inherit;
+    font-weight: 700;
+    font-family: "Alegreya", serif;
     box-shadow: 0 5px 12px rgba(201, 112, 150, 0.15);
-    transition: background 0.2s ease, transform 0.2s ease;
+    
 }
 .submit-button:hover {
     background: #c45e86;
@@ -137,16 +148,11 @@ body {
     cursor: pointer;
     font-weight: 600;
     font: inherit;
+    font-family: "Alegreya", serif;
+    font-size: 1.05rem;
 }
 .switch-card-button:hover {
     text-decoration: underline;
-}
-.auth-card {
-    width: 380px;
-    position: relative;
-    height: 540px;
-    perspective: 1000px;
-    filter: drop-shadow(0 10px 25px rgba(224, 143, 176, 0.12))
 }
 .card-decorations {
     position: absolute;
@@ -168,10 +174,10 @@ body {
 }
 .card-bow-bottom {
     position: absolute;
-    width: 40px;
+    width: 50px;
     height: auto;
-    bottom: 8px;
-    right: 8px;
+    bottom: -10px;
+    right: -10px;
     transform: rotate(10deg);
 }
 .card-bow-top {
@@ -188,4 +194,8 @@ body {
     height: auto;
     top: 24px;
     right: 20px;
+}
+.signup-part > p:last-child,
+.login-part > p:last-child {
+    text-align: center;
 }

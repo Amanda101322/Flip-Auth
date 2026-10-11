@@ -200,16 +200,15 @@ body {
     text-align: center;
 }
 .password-field {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    position: relative;
+    width: 100%;
 }
 .password-field input {
-    flex: 1;
-    min-width: 0;
+    width: 100%;
+    padding-right: 2.5rem;
 }
 .toggle-password {
-    padding: 0.5rem;
+    padding: 0.2rem;
     border: none;
     background: transparent;
     color: #c45e86;
@@ -217,12 +216,16 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: absolute;
+    right: 0.7rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .toggle-password:hover {
     background: #fce4ec;
 }
 .toggle-password img {
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }

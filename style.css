@@ -231,23 +231,26 @@ body {
 }
 .success-message {
     display: none;
-    position: fixed;
+    position: absolute;
     margin-top: 1rem;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem;
     background: #fff0f5;
     border: 1px solid #efc6d8;
     color: #a0446c;
     font-family: "Alegreya", serif;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: center;
-    top: 20px;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -10px);
-    width: max-content;
-    max-width: 90vw;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    max-width: 85vw;
     box-shadow: 0 6px 20px rgba(164, 81, 112, 0.18);
-    z-index: 100;
+    z-index: 1000;
     opacity: 0;
+    overflow-wrap: anywhere;
+    box-sizing: border-box;
+    
 
 }
 .success-message.show {
@@ -257,10 +260,17 @@ body {
 @keyframes popup-message {
     0% {
         opacity: 0;
-        transform: translate(-50%, -10px);
+        transform: translate(-50%, -50%);
     }
     12%, 75% {
         opacity: 1;
-        transform: translate(-50%, -10px);
+        transform: translate(-50%, -50%);
     }
+}
+.success-message img {
+    display: block;
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+    margin: 0.8rem auto 0;
 }

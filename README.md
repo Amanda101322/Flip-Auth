@@ -1,9 +1,10 @@
 # Flip-Auth
 [![Live Demo](https://img.shields.io/badge/Live-Demo-ff69b4?style=for-the-badge&logo=vercel&logoColor=white)](https://flip-auth.vercel.app/)
 
-* **Flip Auth** is a pink, coquette-inspired authentication interface featuring a 3D flipping card that switches between sign-up and login forms. I designed it cause I wanted to create cool stuff.
+**Flip Auth** is a pink, coquette-inspired authentication interface featuring a 3D flipping card that switches between sign-up and login forms. I designed it cause I wanted to create cool stuff.
 The design uses blush-pink colours, decorative bows and heart images, paper-inspired styling, and elegant typography.
-Features
+
+## Features
 * **Flipping authentication card**: Switch between sign-up and login using a 3D flip animation.
 <p align="center">
 <img src="auth-card.png" alt="flip auth card" width="600">

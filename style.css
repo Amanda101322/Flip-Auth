@@ -231,15 +231,36 @@ body {
 }
 .success-message {
     display: none;
+    position: fixed;
     margin-top: 1rem;
-    padding: 0.7rem;
+    padding: 1rem 1.5rem;
     background: #fff0f5;
     border: 1px solid #efc6d8;
     color: #a0446c;
     font-family: "Alegreya", serif;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     text-align: center;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    width: max-content;
+    max-width: 90vw;
+    box-shadow: 0 6px 20px rgba(164, 81, 112, 0.18);
+    z-index: 100;
+    opacity: 0;
+
 }
 .success-message.show {
     display: block;
+    animation: popup-message 3.5s ease forwards;
+}
+@keyframes popup-message {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -10px);
+    }
+    12%, 75% {
+        opacity: 1;
+        transform: translate(-50%, -10px);
+    }
 }

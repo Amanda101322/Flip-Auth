@@ -26,17 +26,29 @@ switchButtons.forEach((button) => {
 });
 const signupForm = document.querySelector(".signup-part form");
 const loginForm = document.querySelector(".login-part form");
+
 const signupMessage = document.getElementById("signup-message");
 const loginMessage = document.getElementById("login-message");
+function showSuccessMessage(messageElement, text) {
+    messageElement.querySelector("span").textContent = text;
+    messageElement.classList.remove("show");
+    void messageElement.offsetWidth;
+    messageElement.classList.add("show");
+    setTimeout(() => {
+        messageElement.classList.remove("show");
+    }, 3500);
+}
 signupForm.addEventListener("submit", (event) => {
     event.preventDefault();
-    signupMessage.textContent = "Your account has been created successfully, diva";
-    signupMessage.classList.add("show");
+    showSuccessMessage(
+        signupMessage,
+        "Your account has been created successfully, diva!"
+    );
 });
-
 loginForm.addEventListener("submit", (event) => {
     event.preventDefault();
-
-    loginMessage.textContent = "Welcome back! We've missed you";
-    loginMessage.classList.add("show");
+    showSuccessMessage(
+        loginMessage,
+        "Welcome back, diva! We've missed you."
+    );
 });

@@ -24,3 +24,19 @@ switchButtons.forEach((button) => {
             card.classList.toggle("flipped");
     });
 });
+const signupForm = document.querySelector(".signup-part form");
+const loginForm = document.querySelector(".login-part form");
+const signupMessage = document.getElementById("signup-message");
+const loginMessage = document.getElementById("login-message");
+signupForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    signupMessage.textContent = "Your account has been created successfully, diva";
+    signupMessage.classList.add("show");
+});
+
+loginForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    loginMessage.textContent = "Welcome back! We've missed you";
+    loginMessage.classList.add("show");
+});

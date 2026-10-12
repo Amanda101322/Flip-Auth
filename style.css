@@ -229,3 +229,17 @@ body {
     width: 15px;
     height: 15px;
 }
+.success-message {
+    display: none;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background: #fff0f5;
+    border: 1px solid #efc6d8;
+    color: #a0446c;
+    font-family: "Alegreya", serif;
+    font-size: 0.95rem;
+    text-align: center;
+}
+.success-message.show {
+    display: block;
+}

@@ -1,5 +1,5 @@
 # Flip-Auth
-View here: https://flip-auth.vercel.app/
+[![Live Demo](https://img.shields.io/badge/Live-Demo-ff69b4?style=for-the-badge&logo=vercel&logoColor=white)](https://flip-auth.vercel.app/)
 Flip Auth is a pink, coquette-inspired authentication interface featuring a 3D flipping card that switches between sign-up and login forms. I designed it cause I wanted to create cool stuff.
 The design uses blush-pink colours, decorative bows and heart images, paper-inspired styling, and elegant typography.
 Features
@@ -27,5 +27,5 @@ Features
 1. Clone or download this repository
 https://github.com/Amanda101322/Flip-Auth
 2. Open the project folder in your code editor.
-3. Open index.html in a browser, or use a local developmen server.
+3. Open index.html in a browser, or use a local development server.
 4. Use the switch links to move between the sign-up and login sides.

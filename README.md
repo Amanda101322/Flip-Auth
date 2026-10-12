@@ -10,6 +10,7 @@ Features
 
 * **Pink scrapbook aesthetic**:A decorative pink background with a soft card.
 * **Coquette decorations**: Bow and heart images positioned around the card.
+* **Password Visibility Toggle**: An eye/ eye-slash icon that lets the user show or hide their password input.
 * **Interactive buttons and form fields**: Hover effects on the main action buttons and styled form fields.
 * **Dancing gif as a success message pop up(the thing I'm most proud of)
 <p align="center">

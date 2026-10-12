@@ -1,11 +1,20 @@
 # Flip-Auth
+View here: 
 Flip Auth is a pink, coquette-inspired authentication interface featuring a 3D flipping card that switches between sign-up and login forms. I designed it cause I wanted to create cool stuff.
 The design uses blush-pink colours, decorative bows and heart images, paper-inspired styling, and elegant typography.
 Features
 * **Flipping authentication card**: Switch between sign-up and login using a 3D flip animation.
+<p align="center">
+<img src="au.png" alt="First Forge Home Page" width="600">
+</p>
+
 * **Pink scrapbook aesthetic**:A decorative pink background with a soft card.
 * **Coquette decorations**: Bow and heart images positioned around the card.
 * **Interactive buttons and form fields**: Hover effects on the main action buttons and styled form fields.
+* **Dancing gif as a success message pop up(the thing I'm most proud of)
+<p align="center">
+<img src="th.png" alt="First Forge Home Page" width="600">
+</p>
 
 ## Built With
 - **HTML5**

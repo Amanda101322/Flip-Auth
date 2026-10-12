@@ -5,7 +5,7 @@ The design uses blush-pink colours, decorative bows and heart images, paper-insp
 Features
 * **Flipping authentication card**: Switch between sign-up and login using a 3D flip animation.
 <p align="center">
-<img src="au.png" alt="First Forge Home Page" width="600">
+<img src="au.png" alt="flip auth card" width="600">
 </p>
 
 * **Pink scrapbook aesthetic**:A decorative pink background with a soft card.
@@ -14,7 +14,7 @@ Features
 * **Interactive buttons and form fields**: Hover effects on the main action buttons and styled form fields.
 * **Dancing gif as a success message pop up(the thing I'm most proud of)
 <p align="center">
-<img src="th.png" alt="First Forge Home Page" width="600">
+<img src="th.png" alt="flip auth gif" width="600">
 </p>
 
 ## Built With
